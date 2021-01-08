@@ -3,6 +3,16 @@ import styled from 'styled-components';
 import Link from '../components/Link';
 
 const FooterStyle = styled.div `
+    .responsive {
+        width:1440px;
+        margin: 0 auto;
+        @media(max-width:1024px){
+        width: 768px;
+        }
+        @media(max-width:768px){
+        width: 100vw;
+        }
+    }
     width: 100vw;
     background : url('/img/FooterImg.png')no-repeat;
     display:flex;
@@ -29,7 +39,9 @@ const Footer = () =>{
             }}>
             게이트웨이로 졸업 관리 시작하기
             </div>
-            <Link/>
+            <a href="https://www.naver.com/" alt="link"  style={{textDecoration:"none"}}>
+                <Link/>
+            </a>
         </FooterStyle>
     );
 }
