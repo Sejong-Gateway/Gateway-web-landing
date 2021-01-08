@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 const LinkBlock = styled.div `
     display: flex;
+    align-items: center;
+    white-space: nowrap;
     .linkStyle{
         /* width: 226px;
         height: 70px; */

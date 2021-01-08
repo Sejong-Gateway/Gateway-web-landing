@@ -32,15 +32,20 @@ const pageStyle = styled.div `
   .responsive {
     width:1440px;
     margin: 0 auto;
-
+    @media(max-width:1024px){
+      width: 768px;
+    }
+    @media(max-width:768px){
+      width: 100vw;
+    }
   }
 `
 function App() {
   return (
     <>
-    <GlobalStyle/>
     <pageStyle>
-      <Header/>
+    <GlobalStyle/>
+    <Header/>
       <MidStatus/>
       <MidEngineering/>
       <Footer/>
