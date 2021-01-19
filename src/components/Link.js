@@ -6,8 +6,6 @@ const LinkBlock = styled.div `
     align-items: center;
     white-space: nowrap;
     .linkStyle{
-        /* width: 14.125rem;
-        height: 4.375rem; */
         padding: 1.25rem 2.625rem;
         border-radius: 0.5rem;
         background-color: #ffffff;
@@ -28,15 +26,19 @@ const Link =()=>{
 
     return(
         <LinkBlock>
+        <a href="https://play.google.com/store/apps/details?id=jerry.app.gateway" alt="link" style={{textDecoration:"none"}}>
         <div className = 'linkStyle' style={{marginRight:'2.125rem'}}>
             <img src='/img/google-play.png'/>
             Google Play
         </div>
+        </a>
 
+        <a href="https://www.naver.com/" alt="link" style={{textDecoration:"none"}}>
         <div className = 'linkStyle'>
             <img src='/img/apple.png'/>
             App Store
         </div>
+        </a>
         </LinkBlock>
     );
 }

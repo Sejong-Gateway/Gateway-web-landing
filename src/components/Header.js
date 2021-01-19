@@ -23,9 +23,7 @@ const HeaderStyle = styled.div `
         .headerContainer{
             justify-content: space-between;
             width: 100vw;
-            /* position: absolute; */
             display:flex;
-            /* align-items: center; */
             .logoBlock{
             display: flex;
             flex-direction: column;
@@ -57,10 +55,8 @@ const Header = () =>{
                         <br/>
                         졸업 자가 진단 서비스
                     </div>
-                    <a href="https://www.naver.com/" alt="link" style={{textDecoration:"none"}}>
-                    <Link/>
-                    </a>
                     
+                    <Link/>
                 </div>
                 <img src='/img/GroupHeader.png' className="main-image"/>
             </div>

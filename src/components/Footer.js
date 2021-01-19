@@ -39,9 +39,8 @@ const Footer = () =>{
             }}>
             게이트웨이로 졸업 관리 시작하기
             </div>
-            <a href="https://www.naver.com/" alt="link"  style={{textDecoration:"none"}}>
-                <Link/>
-            </a>
+            
+            <Link/>
         </FooterStyle>
     );
 }
